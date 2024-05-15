@@ -123,6 +123,7 @@ const checkIfUsersAreSafe = async (req, res, next) => {
     }
 };
 
+// change in practicum
 const checkIsVoteRequest = async (req, res, next) => {
     // Если в запросе присылают только поле users
     if (Object.keys(req.body).length === 1 && req.body.users) {

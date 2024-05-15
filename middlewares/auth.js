@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 const checkAuth = (req, res, next) => {
+    console.log("GET users/me ");
     const { authorization } = req.headers;
 
     if (!authorization || !authorization.startsWith("Bearer ")) {

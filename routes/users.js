@@ -25,9 +25,9 @@ const {
 // Обрабатываем GET-запрос с роутом '/categories'
 usersRouter.get("/users", findAllUsers, sendAllUsers);
 
-usersRouter.get("/users/:id", findUserById, sendUserById);
-
 usersRouter.get("/me", checkAuth, sendMe);
+
+usersRouter.get("/users/:id", findUserById, sendUserById);
 
 usersRouter.put("/users/:id", checkEmptyNameAndEmail, checkAuth, updateUser, sendUserUpdated);
 
